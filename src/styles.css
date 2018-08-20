@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('./assets/img/luffy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.letra_blanca {
+    color: white;
+    text-align: center;
+}
+
+.opa {
+    background: rgba(0, 0, 0, .3);
+    border-radius: 1%;
+}
