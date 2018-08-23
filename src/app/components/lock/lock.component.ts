@@ -22,7 +22,7 @@ export class LockComponent implements OnInit {
     // tslint:disable-next-line:prefer-const
     let resp: any[] = [];
     // tslint:disable-next-line:prefer-const
-    let m = DATE.getMinutes();
+    let m: any = DATE.getMinutes();
     // tslint:disable-next-line:prefer-const
     let h = DATE.getHours();
     // tslint:disable-next-line:prefer-const
@@ -49,9 +49,11 @@ export class LockComponent implements OnInit {
         <input style="background: rgba(0, 0, 0, 0)" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         <hr style="border-color: white">
         </div>
-    <button type="button" class="btn btn-outline-dark"  (click)=logi()>Confirmar</button>
+        <a href="#home">
+    <button type="button" class="btn btn-outline-dark">Confirmar</button>
+    </a>
 </form>`).toString();
-  } //le pone comillas a la wea
+  } // le pone comillas a la wea
   logi(value) {
     console.log('alv puto');
     if (value === 'alv') {

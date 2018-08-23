@@ -1,3 +1,83 @@
-<p>
-  calc works!
-</p>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <p class="navbar-brand" style=" text-align: center;">Calculadora</p>
+</nav>
+
+<div class="container calc ">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <table class="table  my-5">
+                <thead>
+                    <tr>
+                        <th colspan="5">
+                            <div class="pan">
+                                <p id="pantalla" class="display-4"></p>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col">
+                            <button id="b7" type="button" class="btn btn-outline-dark" (click)=b7()>7</button>
+                        </th>
+                        <th scope="col">
+                            <button id="b8" type="button" class="btn btn-outline-dark" (click)=b8()>8</button>
+                        </th>
+                        <th scope="col">
+                            <button id="b9" type="button" class="btn btn-outline-dark" (click)=b9()>9</button>
+                        </th>
+                        <th scope="col">
+                            <button id="por" type="button" class="btn btn-outline-dark" (click)=por()>*</button>
+                        </th>
+                        <th scope="col">
+                            <button id="bc" type="button" class="btn btn-outline-danger" (click)=C()>C</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <button id="b4" type="button" class="btn btn-outline-dark" (click)=b4()>4</button>
+                        </th>
+                        <td>
+                            <button id="b5" type="button" class="btn btn-outline-dark" (click)=b5()>5</button>
+                        </td>
+                        <td>
+                            <button id="b6" type="button" class="btn btn-outline-dark" (click)=b6()>6</button>
+                        </td>
+                        <td>
+                            <button id="entre" type="button" class="btn btn-outline-dark">/</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <button id="b1" type="button" class="btn btn-outline-dark" (click)=b1()>1</button>
+                        </th>
+                        <td>
+                            <button id="b2" type="button" class="btn btn-outline-dark" (click)=b2()>2</button>
+                        </td>
+                        <td>
+                            <button id="b3" type="button" class="btn btn-outline-dark" (click)=b3()>3</button>
+                        </td>
+                        <td>
+                            <button id="menos" type="button" class="btn btn-outline-dark">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <button id="point" type="button" class="btn btn-outline-dark">.</button>
+                        </th>
+                        <td>
+                            <button id="b0" type="button" class="btn btn-outline-dark" (click)=b0()>0</button>
+                        </td>
+                        <td>
+                            <button id="igual" type="button" class="btn btn-outline-dark" (click)=igual()>=</button>
+                        </td>
+                        <td>
+                            <button id="plus" type="button" class="btn btn-outline-dark">+</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
